@@ -1,5 +1,5 @@
 
-import { CheckCircleIcon } from '@phosphor-icons/react';
+import { SealCheckIcon } from '@phosphor-icons/react';
 
 const AboutSection = () => {
     const highlights = [
@@ -14,7 +14,7 @@ const AboutSection = () => {
     ];
 
     return (
-        <section className="relative max-w-[1440px] mx-auto py-16 px-6 md:px-8 lg:px-12 xl:px-[70px] bg-white font-sans">
+        <section className="relative max-w-[1440px] mx-auto py-16 px-6 md:px-8 lg:px-12 xl:px-[70px] bg-white">
              <div
     className="absolute inset-0 bg-cover bg-center opacity-5"
     style={{
@@ -34,9 +34,9 @@ const AboutSection = () => {
                         <div className="bg-white p-[6px] rounded-md">
 
                             {/* 3. The Content Div (Teal background) */}
-                            <div className="bg-[#3A9B94] text-white p-6 rounded-md max-w-[190px]">
-                                <h2 className="text-4xl font-bold leading-none">30+</h2>
-                                <p className="mt-2 text-sm font-medium leading-snug">
+                            <div className="bg-[#3A9B94] text-white px-4 py-2 pb-6 rounded-md max-w-[190px]">
+                                <h2 className="text-[60px] font-bold leading-none">30+</h2>
+                                <p className="mt-2 text-sm leading-snug">
                                     Years Bookkeeping Experience
                                 </p>
                             </div>
@@ -47,30 +47,30 @@ const AboutSection = () => {
                 {/* Right Side: Content */}
                 <div className="flex flex-col">
                     <div className="w-12 h-[2px] bg-[#F4A261] mb-2 lg:mb-[14px]" />
-                    <span className="italic text-[#F4A261] text-lg font-highlight font-bold">About Us</span>
+                    <span className="italic text-[#F4A261] text-xl font-highlight font-bold">About Us</span>
                     <h1 className="text-[26px] lg:text-[38px] font-heading font-bold text-[#1A2B32] mt-2 mb-3 lg:mb-6">
                         Meet Your FinanZAlly
                     </h1>
 
                     {/* Featured Paragraph with Left Border */}
                     <div className="border-l-4 border-[#F4A261] pl-3 lg:pl-4 mb-3 lg:mb-6">
-                        <p className="text-gray-600 leading-relaxed text-sm">
-                            With over <span className="font-bold text-gray-800">30 years of bookkeeping experience</span> and <span className="font-bold text-gray-800">18 years as a Financial Controller/CFO</span>, Amy brings a rare blend of hands-on bookkeeping knowledge, operational financial oversight, and practical business insight.
+                        <p className=" leading-relaxed text-sm xl:text-base lg:text-lg xl:text-xl">
+                            With over <span className="font-bold ">30 years of bookkeeping experience</span> and <span className="font-bold ">18 years as a Financial Controller/CFO</span>, Amy brings a rare blend of hands-on bookkeeping knowledge, operational financial oversight, and practical business insight.
                         </p>
                     </div>
 
-                    <p className="text-gray-500 text-sm mb-3 lg:mb-5 leading-relaxed">
+                    <p className=" text-sm xl:text-base mb-3 lg:mb-5 leading-relaxed">
                         Amy Is The Founder Of FinanZAlly™, A Whole Finance Support Firm Created For
                         Business Owners And Family Offices Who Need More Than Basic Bookkeeping.
                         As Your Finance Ally,
-                    </p>
+                    </p>        
 
                     {/* Checklist */}
                     <ul className="grid grid-cols-1 gap-y-1 lg:gap-y-3">
                         {highlights.map((text, index) => (
                             <li key={index} className="flex items-start space-x-3 group">
-                                <CheckCircleIcon className="w-4 h-4 lg:w-5 lg:h-5 text-[#F4A261] flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
-                                <span className="text-gray-600 md:text-sm lg:text-base font-medium leading-tight">
+                                <SealCheckIcon className="w-4 h-4 lg:w-5 lg:h-5 text-[#F4A261] flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
+                                <span className=" text-sm xl:text-base  leading-tight">
                                     {text}
                                 </span>
                             </li>

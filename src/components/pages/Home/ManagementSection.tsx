@@ -43,13 +43,10 @@ export const ManagementSection = () => {
         const handleResize = () => {
             const width = window.innerWidth;
             if (width < 640) {
-                // Mobile: Shrink the radius and the total scale
                 setDimensions({ radius: 140, hub: 60, scale: 1 });
             } else if (width < 1024) {
-                // Tablet
                 setDimensions({ radius: 140, hub: 60, scale: 1 });
             } else {
-                // Desktop
                 setDimensions({ radius: 180, hub: 80, scale: 1 });
             }
         };
@@ -77,7 +74,7 @@ export const ManagementSection = () => {
                 {/* Right Side: Content */}
                 <div className="flex flex-col text-white">
                     <div className="w-12 h-[2px] bg-[#F4A261] mb-2 lg:mb-[14px]" />
-                    <span className="font-highlight italic text-[#F4A261] text-md md:text-xl xl:text-2xl font-bold">
+                    <span className="font-highlight italic text-[#F4A261] text-md md:text-xl font-bold">
                         WealthCare™ Management
                     </span>
 
@@ -96,7 +93,7 @@ export const ManagementSection = () => {
                         {services.map((service, index) => (
                             <li key={index} className="flex items-center space-x-3 group">
                                 <SealCheckIcon className="w-5 h-5 text-[#F4A261] flex-shrink-0" />
-                                <span className="text-gray-200 text-xs lg:text-sm font-medium">
+                                <span className=" text-xs lg:text-sm xl:text-base ">
                                     {service}
                                 </span>
                             </li>
@@ -121,7 +118,7 @@ export const ManagementSection = () => {
                 {/* Left Side Content */}
                 <div className="text-white">
                     <div className="w-12 h-[2px] bg-[#F4A261] mb-2 lg:mb-[14px]" />
-                    <span className="font-highlight italic text-[#F4A261] text-md md:text-xl xl:text-2xl font-bold">Our Approach</span>
+                    <span className="font-highlight italic text-[#F4A261] text-md md:text-xl font-bold">Our Approach</span>
                     <h2 className="text-[24px] xl:text-[38px] font-bold text-white mt-2 mb-3 leading-tight font-heading">
                         More Than Bookkeeping.<br />Whole Finance.
                     </h2>
@@ -134,7 +131,7 @@ export const ManagementSection = () => {
                         {highlights.map((item, i) => (
                             <li key={i} className="flex items-center space-x-3">
                                 <SealCheckIcon className="w-5 h-5 text-[#F4A261] flex-shrink-0" />
-                                <span className="text-gray-200 text-xs lg:text-sm font-medium">{item}</span>
+                                <span className=" text-xs lg:text-sm xl:text-base">{item}</span>
                             </li>
                         ))}
                     </ul>
@@ -148,11 +145,7 @@ export const ManagementSection = () => {
                         </div>
                     </button>
                 </div>
-
-                {/* RIGHT SIDE: THE DIAGRAM */}
                 <div className="relative flex justify-center items-center min-h-[450px] lg:min-h-[600px] w-full z-10">
-
-                    {/* Wrapper to scale the entire diagram for small screens */}
                     <div
                         className="relative flex justify-center items-center transition-all duration-500"
                         style={{ transform: `scale(${scale})` }}

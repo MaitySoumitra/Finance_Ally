@@ -112,7 +112,7 @@ export default function AudienceSection() {
               {features.map((feature, index) => (
                 <li key={index} className="flex items-center space-x-3">
                   <SealCheckIcon className="w-5 h-5 text-[#F4A261] flex-shrink-0" />
-                  <span className="text-gray-600 text-xs font-medium">
+                  <span className=" text-xs xl:text-base ">
                     {feature}
                   </span>
                 </li>
@@ -123,7 +123,7 @@ export default function AudienceSection() {
             <div>
               <button
                 className="group/btn bg-[#2B9896] hover:bg-transparent  hover:shadow-[0px_0px_10px_1px_#00000026]  duration-300 text-white rounded-full  pl-5 pr-3 py-2 lg:pl-8 lg:pr-3 lg:py-2.5 flex items-center gap-3 font-semibold">
-                <span className="text-white text-xs sm:text-sm lg:text-base font-semibold group-hover/btn:text-[#2B9896] transition-colors duration-300">
+                <span className="text-white text-xs sm:text-sm lg:text-base font-medium group-hover/btn:text-[#2B9896] transition-colors duration-300">
                   Schedule a CFO-Level Financial Review
                 </span>
                 <div className="w-6 h-6 lg:w-8 lg:h-8 rounded-full bg-white text-[#2B9896] flex items-center justify-center shrink-0 group-hover/btn:bg-[#2B9896] group-hover/btn:text-white group-hover/btn:translate-x-1 transition-transform duration-300">

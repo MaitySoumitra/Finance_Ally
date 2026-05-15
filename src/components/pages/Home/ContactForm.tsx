@@ -133,7 +133,7 @@ useEffect(() => {
           <div className="mb-8">
             <div className="flex flex-col items-start gap-3 mb-2">
                   <div className="w-10 h-[2px] bg-[#FFAC00]" />
-                  <p className="text-md md:text-xl xl:text-2xl text-[#FFAC00] italic font-highlight font-bold">
+                  <p className="text-md md:text-xl text-[#FFAC00] italic font-highlight font-bold">
                     Contact Us
                   </p>
                 </div>

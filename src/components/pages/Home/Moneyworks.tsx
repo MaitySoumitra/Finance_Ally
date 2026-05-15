@@ -44,14 +44,12 @@ export default function MoneyWorks() {
                             {features.map((feature, index) => (
                                 <li key={index} className="flex items-center space-x-[10px]">
                                     <SealCheckIcon className="w-5 h-5 text-[#F4A261] flex-shrink-0" />
-                                    <span className="text-[#727171] text-xs lg:text-base font-medium">
+                                    <span className="text-[#727171] text-xs lg:text-base">
                                         {feature}
                                     </span>
                                 </li>
                             ))}
                         </ul>
-
-                        {/* CTA Button */}
                         <div>
                             <button
 
